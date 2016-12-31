@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F38DAFB1D099B3000A978AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DAFA1D099B3000A978AA /* AppDelegate.swift */; };
+		3F38DAFD1D099B3000A978AA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F38DAFC1D099B3000A978AA /* GameScene.sks */; };
+		3F38DAFF1D099B3000A978AA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DAFE1D099B3000A978AA /* GameScene.swift */; };
+		3F38DB011D099B3000A978AA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB001D099B3000A978AA /* GameViewController.swift */; };
+		3F38DB041D099B3000A978AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38DB021D099B3000A978AA /* Main.storyboard */; };
+		3F38DB061D099B3000A978AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F38DB051D099B3000A978AA /* Assets.xcassets */; };
+		3F38DB091D099B3000A978AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38DB071D099B3000A978AA /* LaunchScreen.storyboard */; };
+		3F38DB141D099B3000A978AA /* RayTraceJune9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB131D099B3000A978AA /* RayTraceJune9Tests.swift */; };
+		3F38DB1F1D099B3000A978AA /* RayTraceJune9UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB1E1D099B3000A978AA /* RayTraceJune9UITests.swift */; };
+		3F38DB4E1D099B5200A978AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB301D099B5200A978AA /* Constants.swift */; };
+		3F38DB601D099B5200A978AA /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB421D099B5200A978AA /* RGBColor.swift */; };
+		3F38DB631D099B5200A978AA /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB451D099B5200A978AA /* Sphere.swift */; };
+		3F38DB671D099B5200A978AA /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38DB491D099B5200A978AA /* World.swift */; };
+		7407D8A71D17973D00402AF0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8A61D17973D00402AF0 /* Camera.swift */; };
+		7407D8A91D1797EF00402AF0 /* BRDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8A81D1797EF00402AF0 /* BRDF.swift */; };
+		7407D8AB1D17980D00402AF0 /* Lambertian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8AA1D17980D00402AF0 /* Lambertian.swift */; };
+		7407D8AD1D17983600402AF0 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8AC1D17983600402AF0 /* Material.swift */; };
+		7407D8AF1D17986A00402AF0 /* Matte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8AE1D17986A00402AF0 /* Matte.swift */; };
+		7407D8B11D17988800402AF0 /* MultipleObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8B01D17988800402AF0 /* MultipleObjects.swift */; };
+		7407D8B31D1798A000402AF0 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8B21D1798A000402AF0 /* Normal.swift */; };
+		7407D8B51D1798B000402AF0 /* Pinhole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8B41D1798B000402AF0 /* Pinhole.swift */; };
+		7407D8B71D1798C200402AF0 /* Point2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8B61D1798C200402AF0 /* Point2D.swift */; };
+		7407D8B91D1798D100402AF0 /* RayCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8B81D1798D100402AF0 /* RayCast.swift */; };
+		7407D8BB1D1798DC00402AF0 /* SingleSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8BA1D1798DC00402AF0 /* SingleSphere.swift */; };
+		7407D8BD1D1798E900402AF0 /* Tracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8BC1D1798E900402AF0 /* Tracer.swift */; };
+		7407D8BF1D17990600402AF0 /* Vector3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8BE1D17990600402AF0 /* Vector3D.swift */; };
+		7407D8C11D17991900402AF0 /* ViewPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8C01D17991900402AF0 /* ViewPlane.swift */; };
+		7407D8C31D179A3800402AF0 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8C21D179A3800402AF0 /* Ray.swift */; };
+		7407D8C51D179A5300402AF0 /* ShadeRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8C41D179A5300402AF0 /* ShadeRec.swift */; };
+		7407D8C71D179E0F00402AF0 /* Ambient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8C61D179E0F00402AF0 /* Ambient.swift */; };
+		7407D8C91D179E4500402AF0 /* Directional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8C81D179E4500402AF0 /* Directional.swift */; };
+		7407D8CB1D179F0600402AF0 /* GeometricObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8CA1D179F0600402AF0 /* GeometricObject.swift */; };
+		7407D8CD1D179F7600402AF0 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8CC1D179F7600402AF0 /* Light.swift */; };
+		7407D8CF1D17A03E00402AF0 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8CE1D17A03E00402AF0 /* Matrix.swift */; };
+		7407D8D11D17A0E000402AF0 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8D01D17A0E000402AF0 /* Plane.swift */; };
+		7407D8D31D17A14C00402AF0 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407D8D21D17A14C00402AF0 /* Point3D.swift */; };
+		748B5A231D18DBD5007A811D /* PixelMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B5A221D18DBD5007A811D /* PixelMap.swift */; };
+		8ACB537D1D175718005E223B /* RayTracerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB537C1D175718005E223B /* RayTracerScene.swift */; };
+		8ACB537F1D1757E6005E223B /* HomeScreen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8ACB537E1D1757E6005E223B /* HomeScreen.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F38DB101D099B3000A978AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F38DAEF1D099B3000A978AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F38DAF61D099B3000A978AA;
+			remoteInfo = RayTraceJune9;
+		};
+		3F38DB1B1D099B3000A978AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F38DAEF1D099B3000A978AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F38DAF61D099B3000A978AA;
+			remoteInfo = RayTraceJune9;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F38DAF71D099B3000A978AA /* RayTraceJune9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayTraceJune9.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F38DAFA1D099B3000A978AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F38DAFC1D099B3000A978AA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3F38DAFE1D099B3000A978AA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3F38DB001D099B3000A978AA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3F38DB031D099B3000A978AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F38DB051D099B3000A978AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F38DB081D099B3000A978AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F38DB0A1D099B3000A978AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F38DB0F1D099B3000A978AA /* RayTraceJune9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayTraceJune9Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F38DB131D099B3000A978AA /* RayTraceJune9Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayTraceJune9Tests.swift; sourceTree = "<group>"; };
+		3F38DB151D099B3000A978AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F38DB1A1D099B3000A978AA /* RayTraceJune9UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayTraceJune9UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F38DB1E1D099B3000A978AA /* RayTraceJune9UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayTraceJune9UITests.swift; sourceTree = "<group>"; };
+		3F38DB201D099B3000A978AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F38DB301D099B5200A978AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F38DB421D099B5200A978AA /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		3F38DB451D099B5200A978AA /* Sphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		3F38DB491D099B5200A978AA /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		7407D8A61D17973D00402AF0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		7407D8A81D1797EF00402AF0 /* BRDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRDF.swift; sourceTree = "<group>"; };
+		7407D8AA1D17980D00402AF0 /* Lambertian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lambertian.swift; sourceTree = "<group>"; };
+		7407D8AC1D17983600402AF0 /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		7407D8AE1D17986A00402AF0 /* Matte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matte.swift; sourceTree = "<group>"; };
+		7407D8B01D17988800402AF0 /* MultipleObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleObjects.swift; sourceTree = "<group>"; };
+		7407D8B21D1798A000402AF0 /* Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normal.swift; sourceTree = "<group>"; };
+		7407D8B41D1798B000402AF0 /* Pinhole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinhole.swift; sourceTree = "<group>"; };
+		7407D8B61D1798C200402AF0 /* Point2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
+		7407D8B81D1798D100402AF0 /* RayCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RayCast.swift; sourceTree = "<group>"; };
+		7407D8BA1D1798DC00402AF0 /* SingleSphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSphere.swift; sourceTree = "<group>"; };
+		7407D8BC1D1798E900402AF0 /* Tracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracer.swift; sourceTree = "<group>"; };
+		7407D8BE1D17990600402AF0 /* Vector3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3D.swift; sourceTree = "<group>"; };
+		7407D8C01D17991900402AF0 /* ViewPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPlane.swift; sourceTree = "<group>"; };
+		7407D8C21D179A3800402AF0 /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		7407D8C41D179A5300402AF0 /* ShadeRec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadeRec.swift; sourceTree = "<group>"; };
+		7407D8C61D179E0F00402AF0 /* Ambient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ambient.swift; sourceTree = "<group>"; };
+		7407D8C81D179E4500402AF0 /* Directional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directional.swift; sourceTree = "<group>"; };
+		7407D8CA1D179F0600402AF0 /* GeometricObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometricObject.swift; sourceTree = "<group>"; };
+		7407D8CC1D179F7600402AF0 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		7407D8CE1D17A03E00402AF0 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		7407D8D01D17A0E000402AF0 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		7407D8D21D17A14C00402AF0 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
+		748B5A221D18DBD5007A811D /* PixelMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelMap.swift; sourceTree = "<group>"; };
+		8ACB537C1D175718005E223B /* RayTracerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RayTracerScene.swift; sourceTree = "<group>"; };
+		8ACB537E1D1757E6005E223B /* HomeScreen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomeScreen.JPG; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F38DAF41D099B3000A978AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB0C1D099B3000A978AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB171D099B3000A978AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F38DAEE1D099B3000A978AA = {
+			isa = PBXGroup;
+			children = (
+				3F38DAF91D099B3000A978AA /* RayTraceJune9 */,
+				3F38DB121D099B3000A978AA /* RayTraceJune9Tests */,
+				3F38DB1D1D099B3000A978AA /* RayTraceJune9UITests */,
+				3F38DAF81D099B3000A978AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F38DAF81D099B3000A978AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F38DAF71D099B3000A978AA /* RayTraceJune9.app */,
+				3F38DB0F1D099B3000A978AA /* RayTraceJune9Tests.xctest */,
+				3F38DB1A1D099B3000A978AA /* RayTraceJune9UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F38DAF91D099B3000A978AA /* RayTraceJune9 */ = {
+			isa = PBXGroup;
+			children = (
+				3F38DAFA1D099B3000A978AA /* AppDelegate.swift */,
+				3F38DAFC1D099B3000A978AA /* GameScene.sks */,
+				3F38DAFE1D099B3000A978AA /* GameScene.swift */,
+				3F38DB001D099B3000A978AA /* GameViewController.swift */,
+				3F38DB021D099B3000A978AA /* Main.storyboard */,
+				8ACB537E1D1757E6005E223B /* HomeScreen.JPG */,
+				3F38DB051D099B3000A978AA /* Assets.xcassets */,
+				7407D8C61D179E0F00402AF0 /* Ambient.swift */,
+				748B5A221D18DBD5007A811D /* PixelMap.swift */,
+				3F38DB071D099B3000A978AA /* LaunchScreen.storyboard */,
+				8ACB537C1D175718005E223B /* RayTracerScene.swift */,
+				3F38DB301D099B5200A978AA /* Constants.swift */,
+				7407D8A81D1797EF00402AF0 /* BRDF.swift */,
+				7407D8A61D17973D00402AF0 /* Camera.swift */,
+				7407D8C81D179E4500402AF0 /* Directional.swift */,
+				7407D8CA1D179F0600402AF0 /* GeometricObject.swift */,
+				7407D8AA1D17980D00402AF0 /* Lambertian.swift */,
+				7407D8AC1D17983600402AF0 /* Material.swift */,
+				7407D8CC1D179F7600402AF0 /* Light.swift */,
+				7407D8AE1D17986A00402AF0 /* Matte.swift */,
+				7407D8B01D17988800402AF0 /* MultipleObjects.swift */,
+				7407D8CE1D17A03E00402AF0 /* Matrix.swift */,
+				7407D8B21D1798A000402AF0 /* Normal.swift */,
+				7407D8B41D1798B000402AF0 /* Pinhole.swift */,
+				7407D8D01D17A0E000402AF0 /* Plane.swift */,
+				7407D8D21D17A14C00402AF0 /* Point3D.swift */,
+				7407D8B61D1798C200402AF0 /* Point2D.swift */,
+				3F38DB421D099B5200A978AA /* RGBColor.swift */,
+				7407D8BE1D17990600402AF0 /* Vector3D.swift */,
+				7407D8B81D1798D100402AF0 /* RayCast.swift */,
+				7407D8BA1D1798DC00402AF0 /* SingleSphere.swift */,
+				7407D8BC1D1798E900402AF0 /* Tracer.swift */,
+				7407D8C21D179A3800402AF0 /* Ray.swift */,
+				7407D8C41D179A5300402AF0 /* ShadeRec.swift */,
+				7407D8C01D17991900402AF0 /* ViewPlane.swift */,
+				3F38DB451D099B5200A978AA /* Sphere.swift */,
+				3F38DB491D099B5200A978AA /* World.swift */,
+				3F38DB0A1D099B3000A978AA /* Info.plist */,
+			);
+			path = RayTraceJune9;
+			sourceTree = "<group>";
+		};
+		3F38DB121D099B3000A978AA /* RayTraceJune9Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3F38DB131D099B3000A978AA /* RayTraceJune9Tests.swift */,
+				3F38DB151D099B3000A978AA /* Info.plist */,
+			);
+			path = RayTraceJune9Tests;
+			sourceTree = "<group>";
+		};
+		3F38DB1D1D099B3000A978AA /* RayTraceJune9UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F38DB1E1D099B3000A978AA /* RayTraceJune9UITests.swift */,
+				3F38DB201D099B3000A978AA /* Info.plist */,
+			);
+			path = RayTraceJune9UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F38DAF61D099B3000A978AA /* RayTraceJune9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F38DB231D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9" */;
+			buildPhases = (
+				3F38DAF31D099B3000A978AA /* Sources */,
+				3F38DAF41D099B3000A978AA /* Frameworks */,
+				3F38DAF51D099B3000A978AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayTraceJune9;
+			productName = RayTraceJune9;
+			productReference = 3F38DAF71D099B3000A978AA /* RayTraceJune9.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F38DB0E1D099B3000A978AA /* RayTraceJune9Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F38DB261D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9Tests" */;
+			buildPhases = (
+				3F38DB0B1D099B3000A978AA /* Sources */,
+				3F38DB0C1D099B3000A978AA /* Frameworks */,
+				3F38DB0D1D099B3000A978AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F38DB111D099B3000A978AA /* PBXTargetDependency */,
+			);
+			name = RayTraceJune9Tests;
+			productName = RayTraceJune9Tests;
+			productReference = 3F38DB0F1D099B3000A978AA /* RayTraceJune9Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F38DB191D099B3000A978AA /* RayTraceJune9UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F38DB291D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9UITests" */;
+			buildPhases = (
+				3F38DB161D099B3000A978AA /* Sources */,
+				3F38DB171D099B3000A978AA /* Frameworks */,
+				3F38DB181D099B3000A978AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F38DB1C1D099B3000A978AA /* PBXTargetDependency */,
+			);
+			name = RayTraceJune9UITests;
+			productName = RayTraceJune9UITests;
+			productReference = 3F38DB1A1D099B3000A978AA /* RayTraceJune9UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F38DAEF1D099B3000A978AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Student;
+				TargetAttributes = {
+					3F38DAF61D099B3000A978AA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3F38DB0E1D099B3000A978AA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3F38DAF61D099B3000A978AA;
+					};
+					3F38DB191D099B3000A978AA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3F38DAF61D099B3000A978AA;
+					};
+				};
+			};
+			buildConfigurationList = 3F38DAF21D099B3000A978AA /* Build configuration list for PBXProject "RayTraceJune9" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F38DAEE1D099B3000A978AA;
+			productRefGroup = 3F38DAF81D099B3000A978AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F38DAF61D099B3000A978AA /* RayTraceJune9 */,
+				3F38DB0E1D099B3000A978AA /* RayTraceJune9Tests */,
+				3F38DB191D099B3000A978AA /* RayTraceJune9UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F38DAF51D099B3000A978AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F38DAFD1D099B3000A978AA /* GameScene.sks in Resources */,
+				3F38DB091D099B3000A978AA /* LaunchScreen.storyboard in Resources */,
+				8ACB537F1D1757E6005E223B /* HomeScreen.JPG in Resources */,
+				3F38DB061D099B3000A978AA /* Assets.xcassets in Resources */,
+				3F38DB041D099B3000A978AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB0D1D099B3000A978AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB181D099B3000A978AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F38DAF31D099B3000A978AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7407D8A71D17973D00402AF0 /* Camera.swift in Sources */,
+				3F38DB631D099B5200A978AA /* Sphere.swift in Sources */,
+				7407D8CD1D179F7600402AF0 /* Light.swift in Sources */,
+				7407D8D11D17A0E000402AF0 /* Plane.swift in Sources */,
+				7407D8D31D17A14C00402AF0 /* Point3D.swift in Sources */,
+				7407D8CF1D17A03E00402AF0 /* Matrix.swift in Sources */,
+				7407D8C51D179A5300402AF0 /* ShadeRec.swift in Sources */,
+				7407D8B31D1798A000402AF0 /* Normal.swift in Sources */,
+				7407D8BF1D17990600402AF0 /* Vector3D.swift in Sources */,
+				7407D8C91D179E4500402AF0 /* Directional.swift in Sources */,
+				7407D8AD1D17983600402AF0 /* Material.swift in Sources */,
+				7407D8BB1D1798DC00402AF0 /* SingleSphere.swift in Sources */,
+				748B5A231D18DBD5007A811D /* PixelMap.swift in Sources */,
+				7407D8AB1D17980D00402AF0 /* Lambertian.swift in Sources */,
+				8ACB537D1D175718005E223B /* RayTracerScene.swift in Sources */,
+				7407D8B51D1798B000402AF0 /* Pinhole.swift in Sources */,
+				7407D8B91D1798D100402AF0 /* RayCast.swift in Sources */,
+				3F38DB601D099B5200A978AA /* RGBColor.swift in Sources */,
+				3F38DAFF1D099B3000A978AA /* GameScene.swift in Sources */,
+				3F38DB011D099B3000A978AA /* GameViewController.swift in Sources */,
+				7407D8BD1D1798E900402AF0 /* Tracer.swift in Sources */,
+				3F38DB671D099B5200A978AA /* World.swift in Sources */,
+				7407D8A91D1797EF00402AF0 /* BRDF.swift in Sources */,
+				7407D8CB1D179F0600402AF0 /* GeometricObject.swift in Sources */,
+				7407D8C71D179E0F00402AF0 /* Ambient.swift in Sources */,
+				7407D8B71D1798C200402AF0 /* Point2D.swift in Sources */,
+				7407D8AF1D17986A00402AF0 /* Matte.swift in Sources */,
+				7407D8B11D17988800402AF0 /* MultipleObjects.swift in Sources */,
+				7407D8C11D17991900402AF0 /* ViewPlane.swift in Sources */,
+				3F38DAFB1D099B3000A978AA /* AppDelegate.swift in Sources */,
+				7407D8C31D179A3800402AF0 /* Ray.swift in Sources */,
+				3F38DB4E1D099B5200A978AA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB0B1D099B3000A978AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F38DB141D099B3000A978AA /* RayTraceJune9Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F38DB161D099B3000A978AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F38DB1F1D099B3000A978AA /* RayTraceJune9UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F38DB111D099B3000A978AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F38DAF61D099B3000A978AA /* RayTraceJune9 */;
+			targetProxy = 3F38DB101D099B3000A978AA /* PBXContainerItemProxy */;
+		};
+		3F38DB1C1D099B3000A978AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F38DAF61D099B3000A978AA /* RayTraceJune9 */;
+			targetProxy = 3F38DB1B1D099B3000A978AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F38DB021D099B3000A978AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F38DB031D099B3000A978AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F38DB071D099B3000A978AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F38DB081D099B3000A978AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F38DB211D099B3100A978AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F38DB221D099B3100A978AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F38DB241D099B3100A978AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RayTraceJune9/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F38DB251D099B3100A978AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RayTraceJune9/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F38DB271D099B3100A978AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = RayTraceJune9Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayTraceJune9.app/RayTraceJune9";
+			};
+			name = Debug;
+		};
+		3F38DB281D099B3100A978AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RayTraceJune9Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayTraceJune9.app/RayTraceJune9";
+			};
+			name = Release;
+		};
+		3F38DB2A1D099B3100A978AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = RayTraceJune9UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RayTraceJune9;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3F38DB2B1D099B3100A978AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RayTraceJune9UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHCI.RayTraceJune9UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RayTraceJune9;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F38DAF21D099B3000A978AA /* Build configuration list for PBXProject "RayTraceJune9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F38DB211D099B3100A978AA /* Debug */,
+				3F38DB221D099B3100A978AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F38DB231D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F38DB241D099B3100A978AA /* Debug */,
+				3F38DB251D099B3100A978AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F38DB261D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F38DB271D099B3100A978AA /* Debug */,
+				3F38DB281D099B3100A978AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F38DB291D099B3100A978AA /* Build configuration list for PBXNativeTarget "RayTraceJune9UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F38DB2A1D099B3100A978AA /* Debug */,
+				3F38DB2B1D099B3100A978AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F38DAEF1D099B3000A978AA /* Project object */;
+}
